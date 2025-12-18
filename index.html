@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"> 
+    <link rel="stylesheet" href="https://www.1001fonts.com/roboto-condensed-font.html"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="../assests/css/animate.css">
+
+    <style>
+
+* 
+{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+} 
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+body 
+{
+    background-color: #758A93; 
+} 
+
+nav 
+{
+    background-color: #758A93;
+} 
+
+@media (width > 768px) 
+{
+
+.nav-container 
+{
+    position: relative;
+} 
+
+.nav-container .menu-div 
+{
+    position: absolute; 
+    top: 0; 
+    right: 0;
+}
+
+} 
+
+.nav-container .menu-div ul li a:hover 
+{
+    color: #8CE4FF !important;
+} 
+
+.profile-pic-main-div 
+{
+    position: relative;
+} 
+
+.home-section 
+{
+    margin-top: 70px; 
+}
+  
+.profile-pic-div 
+{   
+    width: 330px; 
+    height: 330px;   
+    box-shadow: 0px 0px 8px #8CE4FF; 
+    border-radius: 50%; 
+    position: absolute; 
+    top: 10px; 
+    left: 210px; 
+    position: relative; 
+    margin-top: -22px;
+} 
+
+@media (width >= 320px) and (width < 768px) 
+{
+ 
+    .profile-pic-div 
+ {   
+     display: none;
+ } 
+    
+}
+
+.profile-pic-div img 
+{ 
+    width: 310px; 
+    height: 310px;
+    position: absolute; 
+    top: 11px; 
+    right: 9px; 
+    border-radius: 50%; 
+} 
+
+.website-icons-div 
+{
+    color: #8CE4FF; 
+    margin-top: 50px; 
+    margin-left: 380px;
+} 
+
+@media (width >= 320px) and (width <= 768px) 
+{
+
+.website-icons-div .html-icon-div, .css-icon-div, .js-icon-div, .bootstrap-icon-div, .php-icon-div, .laravel-icon-div, .react-js-icon-div, .node-js-icon-div
+{
+    display: none;
+}
+
+} 
+
+@media (width >= 1024px) and (width < 1025px) 
+{
+    .website-icons-div 
+    {
+        margin-left: 290px;
+    }
+}
+
+.content1 .div1 h3, h1 
+{
+    color: white;
+} 
+
+.content1 .div1 span 
+{
+    color: #8CE4FF;
+} 
+
+.content1 .div2 p 
+{
+    color: white;
+} 
+
+.content1 .div3 
+{
+    display: flex; 
+    gap: 8px; 
+    margin-bottom: 20px; 
+    margin-left: 20px;
+} 
+
+.linkedin-icon-div, .github-icon-div, .whatsapp-icon-div 
+{
+    width: 30px; 
+    height: 30px; 
+    border-radius: 20px; 
+    border: 1px solid #8CE4FF; 
+    position: relative; 
+} 
+
+.content1 .div3 i 
+{
+   color: #8CE4FF; 
+   font-size: 16px; 
+   position: absolute; 
+   top: 6px; 
+   left: 4px;
+} 
+
+.content1 .div4 button 
+{
+    border: none; 
+    background-color: transparent; 
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    box-shadow: 0px 0px 2px #8CE4FF; 
+    border: 1px solid #8CE4FF;
+    color: #8CE4FF; 
+    margin-left:  8px;
+} 
+
+.about-me-main-div 
+{    
+    background-color: #577B8D; 
+    margin-top: 60px;
+} 
+
+@media (width >= 320px) and (width < 768px) 
+{
+ 
+   .about-me-main-div 
+{     
+    margin-top: 0px; 
+    padding: 0;
+}
+
+}
+
+.profile-pic-div2 
+{   
+    width: 330px; 
+    height: 330px;   
+    box-shadow: 0px 0px 6px white; 
+    border-radius: 50%; 
+    position: absolute; 
+    top: 10px; 
+    left: 0px; 
+    position: relative; 
+    margin-top: -22px;
+} 
+
+@media (width >= 320px) and (width < 768px) 
+{
+   
+  .profile-pic-div2 
+{   
+    width: 160px; 
+    height: 160px;   
+    box-shadow: 0px 0px 6px #577B8D; 
+    border-radius: 50%; 
+    position: absolute; 
+    top: 10px; 
+    left: 0px; 
+    position: relative; 
+    margin-top: -22px; 
+} 
+
+}
+
+.profile-pic-div2 img 
+{ 
+    width: 310px; 
+    height: 310px;
+    position: absolute; 
+    top: 11px; 
+    right: 9px; 
+    border-radius: 50%; 
+} 
+
+@media (width >= 320px) and (width < 768px) 
+{
+    .profile-pic-div2 img 
+{ 
+    width: 190px; 
+    height: 190px;
+    position: absolute; 
+    top: 6px; 
+    right: 4px; 
+    border-radius: 50%; 
+} 
+
+} 
+
+.about-me-div span 
+{
+    color: #8CE4FF;
+} 
+
+.about-me-content-div p 
+{
+     text-align: justify;
+} 
+
+.service-div1, .service-div2, .service-div3 
+{
+    background-color: #577B8D; 
+    border-radius: 20px;  
+    box-shadow: 0px 0px 8px #8CE4FF; 
+    width: 30%; 
+    margin-left: 30px;
+} 
+
+.services-container 
+{
+    margin-top: 40px;
+} 
+
+@media (width >= 320px) and (width <= 768px) 
+{
+    .services-container 
+{
+    margin-top: 20px;
+}
+
+.service-div1, .service-div2, .service-div3 
+{
+    background-color: #577B8D; 
+    border-radius: 20px;  
+    box-shadow: 0px 0px 8px #8CE4FF; 
+    width: 100%; 
+    margin-left: 30px; 
+    margin-bottom: 30px;
+}
+
+} 
+
+@media (width >= 1024px) and (width < 1440px) 
+{
+   .service-div1, .service-div2, .service-div3 
+{
+    background-color: #577B8D; 
+    border-radius: 20px;  
+    box-shadow: 0px 0px 8px #8CE4FF; 
+    width: 40%; 
+    margin-left: 50px; 
+    margin-bottom: 30px;
+}
+
+}
+
+.services-container span, .projects-main-div span 
+{
+    color: #8CE4FF;
+} 
+
+.service-div3 i 
+{
+    margin-top: 15px;
+} 
+
+.projects-main-div 
+{
+    background-color: #577B8D; 
+    margin-top: 80px; 
+    padding-top: 30px;
+    padding-bottom: 80px;
+} 
+
+.projects-main-div img 
+{
+    border: 1px solid #8CE4FF;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 5px #8CE4FF; 
+} 
+
+.projects-main-div a 
+{
+    text-decoration: none; 
+    color: white; 
+    margin-left: 38%; 
+} 
+
+.projects-col-div1, .projects-col-div2, .projects-col-div3  
+{
+    margin-bottom:  30px; 
+} 
+
+.projects-main-div h1 
+{ 
+    margin-top: 25px;
+    margin-bottom: 30px;
+} 
+
+.contact-form input  
+{
+    background-color: transparent !important; 
+    color: white !important;
+} 
+
+.contact-form input::placeholder, .contact-form textarea::placeholder
+{
+    color: white;
+}
+
+.contact-form textarea  
+{
+    background-color: transparent !important;
+    color: white;
+} 
+
+.contact-form input:focus  
+{  
+    background-color: transparent !important; 
+    box-shadow: none; 
+    border: none !important; 
+    border: 1px solid #8CE4FF !important; 
+    border-left: 6px solid #8CE4FF !important; 
+    color: white;
+} 
+
+.contact-form textarea:focus   
+{
+    background-color: transparent !important; 
+    box-shadow: none; 
+    border: none !important; 
+    border: 1px solid #8CE4FF !important; 
+    border-left: 6px solid #8CE4FF !important; 
+    color: white;
+} 
+
+.contact-me-div .contact-me-span 
+{
+    color: #8CE4FF;
+} 
+
+.contact-me-div 
+{
+    margin-top: 70px;
+}
+
+.contact-form button 
+{
+    border: none; 
+    background-color: transparent; 
+    border-radius: 20px; 
+    padding: 5px 20px; 
+    box-shadow: 0px 0px 2px #8CE4FF; 
+    border: 1px solid #8CE4FF;
+    color: #8CE4FF; 
+    margin-left:  8px;
+} 
+
+.contactdiv1 a   
+{ 
+    text-decoration: none;
+    color: white; 
+} 
+
+.email-icon, .contact-icon 
+{
+    color: #8CE4FF;
+} 
+
+.contactdiv2 
+{
+    display: flex; 
+    gap: 8px; 
+    margin-bottom: 20px; 
+    margin-left: 20px; 
+    margin-top: 35px; 
+    margin-left: 0px;
+} 
+
+.linkedin-icon-div, .github-icon-div, .whatsapp-icon-div 
+{
+    width: 30px; 
+    height: 30px; 
+    border-radius: 20px; 
+    border: 1px solid #8CE4FF; 
+    position: relative;
+} 
+
+.contactdiv2 i 
+{
+   color: #8CE4FF; 
+   font-size: 16px; 
+   position: absolute; 
+   top: 6px; 
+   left: 4px;
+} 
+
+.devoloper-div 
+{ 
+    background-color: #577B8D;
+} 
+
+
+    </style>
+
+
+</head>
+<body>
+    
+
+     <nav class="navbar navbar-expand-lg sticky-top mt-3">
+  <div class="container nav-container">
+    <a class="navbar-brand text-white" href="#home-section">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse menu-div" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white text" aria-current="page" href="#home-section">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#about-me-section">About</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#service-section">Services</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#projects-section">Projects</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contact-section">Contact</a>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+<section class="home-section" id="home-section">
+
+  <div class="container mt-4 content1">
+    <div class="row">
+      <div class="col-md-6">
+           <div class="div1">
+                <h3>Hi, It's Me <br> Rehan Asghar <br> And I'm a Full stack <span>Web Developer</span></h3>
+           </div>
+           <div class="div2">
+            <p>I'm a full stack web Developer with extensive experience for over a year. <br> expertise is to create website design, Frontend design, backend developement <br> and many more...</p>
+           </div>
+           <div class="div3">
+              <div class="linkedin-icon-div">
+                   <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <div class="github-icon-div">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </div> 
+                <div class="whatsapp-icon-div">
+                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+        </div>
+           <div class="div4">
+              <a href="index.html" download target="_blank"><button>Download CV</button></a>
+           </div>
+      </div>
+      <div class="col-md-6 profile-pic-main-div mt-1 col-sm-12">
+             <div class="profile-pic-div">
+                 <img src="profile-man-pic.jpeg" alt="Man profile pic">
+             </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="website-icons-div d-flex fs-3 gap-3"> 
+          <div class="html-icon-div">
+             <i class="fa-brands fa-html5"></i>
+         </div> 
+         <div class="css-icon-div">
+             <i class="fa-brands fa-css3-alt"></i>
+         </div> 
+         <div class="js-icon-div">
+             <i class="fa-brands fa-js"></i>
+         </div> 
+         <div class="bootstrap-icon-div">
+             <i class="fa-brands fa-bootstrap"></i>
+         </div> 
+          <div class="php-icon-div">
+             <i class="fa-brands fa-php"></i>
+         </div> 
+         <div class="laravel-icon-div">
+             <i class="fa-brands fa-laravel"></i>
+         </div>  
+          <div class="react-js-icon-div">
+             <i class="fa-brands fa-react"></i>
+         </div>  
+          <div class="node-js-icon-div">
+             <i class="fa-brands fa-node-js"></i>
+         </div>  
+  </div>
+
+</section> 
+
+<section id="about-me-section">
+
+  <div class="about-me-main-div p-4">
+       <div class="container">
+        <div class="row">
+          <div class="col-md-6 p-5 mt-2 col-sm-12 about-me-pic-div">
+                 <div class="profile-pic-div2">
+                   <img src="profile-man-pic.jpeg" alt="Man profile pic">
+                </div>
+          </div>
+          <div class="col-md-6 p-5 col-sm-12 about-me-info-div">
+               <div class="about-me-div">
+                   <h1 class="text-white wow bounceInLeft">About <span>Me</span></h1> 
+                   <h3 class="text-white">Full Stack Developer</h3>
+               </div> 
+               <div class="about-me-content-div">
+                   <p class="text-white">I'm a full stack web developer with a year of experience.
+                      I specialize in creating websites that look captivating and work smoothly.
+                      My work is guided by core UX/UI principles.
+                      I believe good design must be both visually appealing and easy to use.
+                      For every project, I start with research.
+                      I analyze the target audience in depth.
+                      I also focus on the client's specific goals and requirements.
+                      This process ensures the final design is on-target and effective.
+                      My passion is turning these insights into functional, engaging websites.
+                      The result is a seamless and enjoyable experience for every visitor.</p>
+               </div>
+          </div>
+        </div>
+       </div>
+  </div>
+
+</section> 
+
+
+
+<section id="service-section">
+
+  <div class="container services-container p-5">
+    <div class="row"> 
+      <h1 class="text-white text-center mb-5">My <span>Services</span></h1>
+      <div class="col-md-3 service-div1 text-white col-sm-12"> 
+             <i class="fa-solid fa-code fs-4 mt-4 ms-2 mb-2"></i> 
+             <h2>Frontend Developement</h2> 
+             <p>I build fast, interactive, and visually engaging user interfaces using modern technologies like HTML5, CSS3, Javascript & React js. I focus on creating seamless client-side experiences with clean, maintainable code.</p>
+      </div>
+      <div class="col-md-3 service-div2 text-white">
+             <i class="fa-solid fa-database fs-5 mt-4 ms-2 mb-2"></i> 
+             <h2>Backend Developement</h2> 
+             <p>I develop robust, secure, and scalable server-side systems that power applications and manage data efficiently. I ensure your application's logic, database, and APIs work seamlessly.</p>
+      </div>
+      <div class="col-md-3 service-div3 text-white-3 text-white">
+         <i class="fa-solid fa-computer fs-5 mt-4 ms-2 mb-2"></i> 
+         <h2>Responsive Web Design</h2> 
+         <p>I create websites that look and function perfectly on all devices like desktops, tablets, and smartphones. Using a mobile-first approach, I ensure optimal user experience across every screen size.</p>
+      </div> 
+      <div class="col-md-3 service-div3 text-white-3 text-white">
+         <i class="fa-solid fa-laptop fs-5 mt-4 ms-2 mb-2"></i>
+         <h2>Ui & Ux Designer</h2> 
+         <p>I design intuitive and impactful digital experiences. I focus on understanding user needs and translating them into clean, functional interfaces that drive engagement and achieve business goals.</p>
+      </div>   
+    </div>
+  </div>
+
+</section> 
+
+
+<section  id="projects-section">
+
+  <div class="projects-main-div"> 
+       <div class="container">
+          <div class="row"> 
+            <h1 class="text-center">Latest <span>Projects</span></h1>
+              <div class="col-md-4 projects-col-div1 p-4">
+                  <img src="hero-section.jpg" width="100%" height="100%"  alt="Hero-Section"> 
+                  <p class="mt-3"><a href="#">Design 1</a></p>
+              </div>
+              <div class="col-md-4 projects-col-div2 p-4">
+                <img src="sweetshop-pic.jpg" alt="Card" width="100%" height="100%"> 
+                <p class="mt-3"><a href="#">Design 2</a></p>
+              </div>
+              <div class="col-md-4 projects-col-div3 p-4">
+                 <img src="portfolio-pic.jpg" alt="Profile" width="100%" height="100%"> 
+                 <p class="mt-3"><a href="#">Design 3</a></p>
+              </div> 
+               <div class="col-md-4 projects-col-div4 p-4">
+                <img src="sweetshop-pic.jpg" alt="Card" width="100%" height="100%"> 
+                <p class="mt-3"><a href="#">Design 4</a></p>
+              </div> 
+              <div class="col-md-4 projects-col-div5 p-4">
+                 <img src="portfolio-pic.jpg" alt="Profile" width="100%" height="100%"> 
+                 <p class="mt-3"><a href="#">Design 5</a></p>
+              </div> 
+               <div class="col-md-4 projects-col-div6 p-4">
+                  <img src="hero-section.jpg" width="100%" height="100%"  alt="Hero-Section"> 
+                  <p class="mt-3"><a href="#">Design 6</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</section> 
+
+<footer>
+
+  <div class="container contact-me-div"  id="contact-section"> 
+    <div class="row"> 
+      <h1 class="text-center text-white">Contact <span class="contact-me-span">Me</span></h1> 
+           <div class="col-md-6 p-3"> 
+              <div class="lets-talk-div mt-4">
+                  <h5 class="text-white">Let's Talk</h5> 
+                  <p class="text-white">I'm always open to discussing new projects or creative ideas. Let's work <br> together to create something meaningful. Have a project in mind? Let's <br> make it happen.</p>
+              </div>
+              <div class="contactdiv1 mt-4">
+                   <div class="email-icon-div mb-1">
+                          <i class="fa-solid fa-envelope fs-5 email-icon"></i> <span class="email-span"><a href="#">rehan79664703@gmail.com</a></span> 
+                   </div> 
+                    <div class="contact-icon-div">
+                          <i class="fa-solid fa-phone fs-5 contact-icon"></i> <span class="contact-span"><a href="#">+92 333 6698414</a></span>
+                    </div>
+              </div>
+              <div class="contactdiv2">
+                        <div class="linkedin-icon-div">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="github-icon-div">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div> 
+                         <div class="whatsapp-icon-div">
+                              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div> 
+              </div>
+      </div>
+      <div class="col-md-6 p-3">
+              <form class="contact-form mt-1" autocomplete="off"> 
+                  <div>
+                       <label for="name-input"></label>
+                       <input type="text" class="form-control text-white" id="name-input" placeholder="Enter your Name" required>
+                  </div> 
+                  <div>
+                       <label for="email-input"></label>
+                       <input type="email" class="form-control" id="email-input" placeholder="Enter your Email" required>
+                  </div>  
+                  <div class="mb-4">
+                       <label for="address-input"></label>
+                       <textarea id="address-input" class="form-control" placeholder="Enter your Message" required></textarea>
+                  </div> 
+                  <div class="text-center">
+                        <button type="submit">Submit</button>
+                  </div>
+            </form>
+      </div>
+     
+    </div>
+  </div> 
+
+  <div class="devoloper-div p-1 mt-4">
+        <h5 class="text-center text-white mt-2">Developed by: Rehan Asghar</h5>
+  </div>
+
+</footer> 
+
+    <!-- wow.js cdn --> 
+
+    <script src="../assests/js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    
+    <!-- bootstrap cdn -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
